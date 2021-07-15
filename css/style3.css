@@ -1,0 +1,55 @@
+h1{
+    color: cornflowerblue;
+}
+h3{
+    color: darkblue;
+}
+.first-tital{
+    color: darkolivegreen;
+}
+#youtube-link{
+    color: rgb(197, 47, 139);
+}
+.demo h1{
+    color: brown;
+}
+*{
+    font-size: 20px;
+}
+.my-list + ul{
+    list-style: none;
+}
+.routing li{
+    color: indianred;
+}
+.routing li a{
+    color: rgb(94, 196, 91);
+}
+a{
+    color: saddlebrown;
+}
+.links li:nth-child(1){
+    color: salmon;
+}
+.links1 {
+    color: rgb(211, 116, 72);
+}
+.omr{
+    color: skyblue;
+}
+#ecr{
+    color: tan;
+}
+h2{
+    color: violet !important;
+}
+h3.active{
+    color: yellow;
+}
+div{
+    border: 1px solid black;
+}
+table,th,td{
+    border:1px solid red;
+    border-collapse: collapse;
+}
