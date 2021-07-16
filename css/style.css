@@ -1,6 +1,7 @@
-.left {
+.container {
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 .right {
   height: 100vh;
@@ -87,4 +88,11 @@ a:link, a:visited {
     padding: 5px;
     text-align: left;    
   }
-  
+  #img{
+    position: absolute;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 50%;
+    margin-bottom: 50%;
+   }
+    

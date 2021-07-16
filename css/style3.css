@@ -40,16 +40,76 @@ a{
 #ecr{
     color: tan;
 }
-h2{
+h2::after{
     color: violet !important;
+    content: "subramani";
 }
 h3.active{
     color: yellow;
 }
-div{
-    border: 1px solid black;
-}
 table,th,td{
     border:1px solid red;
     border-collapse: collapse;
+}
+div{
+    /*background-color: blueviolet;*/
+    color: black;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+   /* border: 1px solid black;*/
+}
+*{
+    
+    box-sizing: border-box;
+}
+.text-section{
+    font-size: 16px;
+}
+.text-section div{
+    font-size: 1em;
+}
+button{
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+#button2{
+    margin: 1rem;
+    padding: 1rem 2rem;
+    background-color: cornflowerblue;
+    border-top-left-radius: 2rem;
+}
+#button3{
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 50%;
+}
+#button4{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: rgb(154, 154, 189);
+}
+#button5{
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    background-color: "none";
+}
+a{
+   display: block;
+   background-color: darkcyan;
+   height: 2rem;
+   text-align: center;
+   padding: 2rem;
+}
+#lin a{
+    display:inline-block;
+    background-color: darkcyan;
+    height: 2rem;
+    text-align: center;
+    padding: 2rem;
 }
