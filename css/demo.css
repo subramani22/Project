@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: cornflowerblue;
+    background: rgb(255, 255, 255);
 }
 .wrapper{
     width: 1170px;
@@ -48,6 +48,7 @@ nav ul>li.dropdown>a:after{
     float: right;
     content: '';
     margin-left: 10px;
+    
     margin-top: 8px;
 }
 nav > ul>li:hover{
@@ -55,10 +56,10 @@ nav > ul>li:hover{
 }
 nav ul.menu-area{
     padding: 40px 40px 0 40px;
-    background: #fff;
+    background:rgb(253, 254, 255);
     text-align: left;
-    border-top: 5px solid #164c82;
-    box-shadow: 0 5px 10px rgba(0,0, 0, 0.6);
+    border-top: 0px solid #507eac;
+    box-shadow: 0 0px 0px rgba(0,0, 0, 0.6);
     z-index: 1;
     position: absolute;
     display:-webkit-flex;
@@ -70,6 +71,8 @@ nav ul.menu-area{
     width:1170px;
     top:-9999px;
     left:0;
+    
+    
 }
 nav ul li:hover ul.menu-area{
     top:100%;

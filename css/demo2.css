@@ -1,3 +1,30 @@
+.megamenu {
+    position: static
+}
+
+.megamenu .dropdown-menu {
+    background: none;
+    border: none;
+    width: 100%
+}
+
+body {
+    background: #fffefe;
+    background: -webkit-linear-gradient(to right, #fafafa, #ffffff);
+    background: linear-gradient(to right, #fffeff, #ffffff);
+    min-height: 100vh
+}
+
+code {
+    color: #745eb1;
+    background: #fff;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.2rem
+}
+
+.text-uppercase {
+    letter-spacing: 0.08em
+}
 footer .main-footer{  padding: 20px 0;  background: #333136;}
 footer ul{  padding-left: 0;  list-style: none;}
 .footer-copyright { background: #222; padding: 5px 0;}
@@ -53,85 +80,3 @@ ul.social-footer2 li a {display: block; height:30px;width: 30px;text-align: cent
    .hidden{
     display:none;
     }
-  nav a{
-      display:block;
-      color:rgb(5, 5, 5);
-      text-decoration: none;
-      text-transform: uppercase;
-  }
-  nav ul li{
-      color:#fff;
-      list-style: none;
-      transition: 0.5s;
-  }
-  nav > ul> li>a{
-      padding: 15px 25px;
-  }
-  nav ul>li.dropdown>a:after{
-      position: relative;
-      float: right;
-      content: '';
-      margin-left: 10px;
-      
-      margin-top: 8px;
-  }
-  nav > ul>li:hover{
-      background: #668fc5;
-  }
-  nav ul.menu-area{
-      padding: 40px 40px 0 40px;
-      background:rgb(253, 254, 255);
-      text-align: left;
-      border-top: 0px solid #fbfcfd;
-      box-shadow: 0 0px 0px rgba(0,0, 0, 0.6);
-      z-index: 1;
-      position: absolute;
-      display:-webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      flex-wrap: wrap;
-      width:1170px;
-      top:-9999px;
-      left:0;
-      
-  }
-  nav ul li:hover ul.menu-area{
-      top:100%;
-  }
-  nav ul.menu-area ul{
-      width:25%;
-      margin-bottom: 40px;
-      color: #262626;
-  
-  }
-  nav ul.menu-area h4{
-      margin-bottom: 15px;
-      text-transform: uppercase;
-  }
-  nav ul.menu-area ul {
-      display:inline;
-  }
-  nav ul.menu-area ul li a{
-      margin-top: 10px;
-      color: #000;
-      text-transform: none;
-  }
-  nav ul.menu-area ul li a:hover{
-      color: #164c82;
-  }
-  .menu-area{
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .dropdown-submenu {
-    position: relative;
-  }
-  
-  .dropdown-submenu .dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: -1px;
-  }
-  
