@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+ 
+   
+  </head>
+  <body>
+    <h1>india</h1>
+    <p id="indiaTime"></p>
+    <h1>London</h1>
+    <p id="londonTime"></p>
+    <script>
+      function getIndiaTime() {
+        document.getElementById("indiaTime").innerHTML = new Date().toLocaleString("en-US", { timeZone: 'Asia/Kolkata', timeStyle: 'short', hourCyle: 'h24' });
+      }
+      getIndiaTime();
+      setInterval(getIndiaTime, 1000);
+      document.getElementById("txtvalue").innerHTML = new Date().toLocaleString("en-US", { timeZone: 'Europe/London', timeStyle: 'short', hourCyle: 'h24' });
+      
+    </script>
+    
+    <script>
+      function ddlselect()
+      {
+        var d=document.getElementById("ddselect");
+        var displaytext=d.options[d.selectedIndex].text;
+        document.getElementById("txtvalue").innerHTML = new Date().toLocaleString("en-US", { timeZone: 'Asia/Kolkata', timeStyle: 'short', hourCyle: 'h24' });
+       
+        document.getElementById("txtvalue").value=displaytext;
+      }
+    </script>
+    <select id="ddselect" onchange="ddlselect();">
+      <option>--choose--</option>
+      <option>India</option>
+      <option>London</option>
+      
+
+    </select>
+    <p id="txtvalue"></p>
+    <p id="txtvalue1"></p>
+   
+    <label for="from">From</label> <input type="text" id="from" name="from"/> <label for="to">to</label> <input type="text" id="to" name="to"/>
+<script>
+    var dateToday = new Date();
+    var dates = $("#from, #to").datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 3,
+        minDate: dateToday,
+        onSelect: function(selectedDate) {
+            var option = this.id == "from" ? "minDate" : "maxDate",
+                instance = $(this).data("datepicker"),
+                date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+            dates.not(this).datepicker("option", option, date);
+        }
+    });
+  </script>
+  </body>
+</html>
