@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/personal.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=poppins">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo_content">
+                <div class="logo">
+                   <i class='bx bxl-c-plus-plus'></i>
+                   <div class="logo_name">codingLab</div>
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
+            </div>
+            <ul class="nav_list" style="list-style: none;">
+                <li style="text-decoration: none;">
+                    <a href="#">
+                    <i class='bx bx-grid-alt' ></i>
+                    <span class="links_name">subbu</span>    
+                    </a>
+                    <span class ="tooltip">Dash</span>
+                 </li>
+                 <li style="text-decoration: none;">
+                    <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">subbu</span>    
+                    </a>
+                    <span class ="tooltip">Dash</span>
+                 </li>
+                 <li style="text-decoration: none;">
+                    <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">subbu</span>    
+                    </a>
+                    <span class ="tooltip">Dash</span>
+                 </li>
+                 <li style="text-decoration: none;">
+                    <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">subbu</span>    
+                    </a>
+                    <span class ="tooltip">Dash</span>
+                 </li>
+                 <li style="text-decoration: none;">
+                    <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">subbu</span>    
+                    </a>
+                    <span class ="tooltip">Dash</span>
+                 </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home_content">
+            <div class="text">content</div>
+        </div>
+        <script>
+            var btn=document.querySelector("#btn");
+            var sidebar=document.querySelector(".sidebar");
+            btn.onclick = function(){
+                sidebar.classList.toggle("active");
+            }
+            
+        </script>
+    </body>
+</html>
